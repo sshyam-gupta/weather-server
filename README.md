@@ -10,3 +10,9 @@ SERVER_PORT
 Run: 
 
 `yarn start`
+
+Available url:
+
+`/weather?city=Delhi`
+
+Default city: mumbai
