@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [{ "src": "./src/server.js", "use": "@now/node-server" }],
+  "env": {
+    "SERVER_PORT": "@server_port",
+    "YAHOO_APP_ID": "@yahoo_app_id",
+    "YAHOO_CONSUMER_KEY": "@yahoo_consumer_key",
+    "YAHOO_CONSUMER_SECRET": "@yahoo_consumer_secret"
+  },
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/src/server.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/weather",
+      "dest": "/src/server.js",
+      "methods": ["GET"]
+    }
+  ]
+}
